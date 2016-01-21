@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         // Forth - the Array of data
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values);
+                R.layout.listitem, R.id.list_item, values);
 
 
         // Assign adapter to ListView
