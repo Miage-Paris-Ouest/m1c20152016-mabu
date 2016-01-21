@@ -6,7 +6,7 @@ La demande du client est de créer une application mobile à destination des abo
 </br>
 ## Périmètre : ##
 </br>
-Nous nous concentrons sur les utilisateurs possédant un compte étudiant ou personnel de l'université de Nanterre Paris Ouest et le support de l'application sera Android .
+Nous nous concentrons sur les utilisateurs possédant un compte étudiant ou personnel de l'université de Nanterre Paris Ouest. L'application sera réalisée sous Android.
 </br>
 ## Fonctionnalités : ##
 </br>
