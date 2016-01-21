@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listView);
 
         // Defined Array values to show in ListView
-        String[] values = new String[] { "Envoyer un message",
-                "Consulter les informations pratiques",
-                "Prolonger les documents",
-                "Consulter les prêts",
+        String[] values = new String[] {
                 "Rechercher un livre",
-                "Recevoir des alertes"
+                "Consulter les prêts",
+                "Recevoir des alertes",
+                "Informations pratiques",
+                "Contacter"
         };
 
         // Define a new Adapter
@@ -68,22 +68,19 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(position) {
                     case 0:
-                        setContentView(R.layout.activity_contact);
-                        break;
-                    case 1:
-                        setContentView(R.layout.activity_infos);
-                        break;
-                    case 2:
-                        setContentView(R.layout.activity_prolongation);
-                        break;
-                    case 3:
-                        setContentView(R.layout.activity_consulter_prets);
-                        break;
-                    case 4:
                         setContentView(R.layout.activity_rechercher_livre);
                         break;
-                    case 5:
+                    case 1:
+                        setContentView(R.layout.activity_consulter_prets);
+                        break;
+                    case 2:
                         setContentView(R.layout.activity_recevoir_alerte);
+                        break;
+                    case 3:
+                        setContentView(R.layout.activity_infos);
+                        break;
+                    case 4:
+                        setContentView(R.layout.activity_contact);
                         break;
                 }
 
