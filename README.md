@@ -26,3 +26,10 @@ L'utilisateur devra se connecter pour accéder aux fonctionnalités suivantes :
 - Consulter les informations pratiques : une page permettra à l'utilisateur de voir toutes les informations de la bibliothèque (adresse, horaires d'ouverture et cetera).</br>
 
 - Envoyer un message : un formulaire sera mis à disposition de l'utilisateur pour que ce dernier puisse contacter le personnel de la bibliothèque.
+
+## Manuel d'utilisation : ##
+</br>
+
+### Se connecter ### 
+Pour se connecter, il faut indiquer son identifiant (compte lecteur) et son mot de passe.
+
