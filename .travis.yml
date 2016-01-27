@@ -12,6 +12,6 @@ android:
   - android-23
   - extra-android-m2repository
   - sys-img-${ANDROID_ABI}-${ANDROID_TARGET}
-install: ./gradlew clean build
+install: MaBU/gradlew clean build
 script:
   - MaBU/gradlew build assembleAndroidTest
