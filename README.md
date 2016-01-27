@@ -30,6 +30,17 @@ L'utilisateur devra se connecter pour accéder aux fonctionnalités suivantes :
 ## Manuel d'utilisation : ##
 </br>
 
-### Se connecter ### 
+<h3> Se connecter </h3> 
 Pour se connecter, il faut indiquer son identifiant (compte lecteur) et son mot de passe.
+
+<h3> Choisir son action </h3>
+
+<h4> Envoyer un message </h4>
+<h4> Consulter les informations pratiques </h4>
+<h4> Prolonger les documents </h4>
+<h4> Consulter les prêts </h4>
+<h4> Rechercher un livre </h4>
+<h4> Recevoir des alertes </h4>
+
+
 
