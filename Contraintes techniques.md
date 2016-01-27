@@ -3,5 +3,6 @@
 ## Contraintes techniques : ##
 <br>
 ### Languages utilisés ###
-
+Java, Xml, Android
 ### Outils utilisés ###
+Travis, Github, Android Studio

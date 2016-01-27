@@ -30,17 +30,26 @@ L'utilisateur devra se connecter pour accéder aux fonctionnalités suivantes :
 ## Manuel d'utilisation : ##
 </br>
 
-<h3> Se connecter </h3> 
-Pour se connecter, il faut indiquer son identifiant (compte lecteur) et son mot de passe.
+Au lancement de l'application, nous arrivons sur la page de connexion.
+
+<h3> La connexion </h3> 
+Pour se connecter, il faut indiquer son identifiant (compte lecteur) et son mot de passe. Enfin, cliquer sur le bouton "Se connecter".
 
 <h3> Choisir son action </h3>
+Après la connexion, nous arrivons sur la page principale de l'application. Elle permet de choisir une action parmi plusieurs.
 
-<h4> Envoyer un message </h4>
-<h4> Consulter les informations pratiques </h4>
-<h4> Prolonger les documents </h4>
-<h4> Consulter les prêts </h4>
-<h4> Rechercher un livre </h4>
-<h4> Recevoir des alertes </h4>
+<h4> 1. Envoyer un message </h4>
+Dans cette partie, l'utilisateur a la possibilité de contacter un responsable.
+<h4> 2. Consulter les informations pratiques </h4>
+Dans cette partie, plusieurs informations pratiques sont divulguées: l'adresse, le numéro de téléphone,les horaires, les contacts.
+<h4> 3. Prolonger les documents </h4>
+Dans cette partie, l'utilisateur a la possibilité de prolonger les documents empruntés. 
+<h4> 4. Consulter les prêts </h4>
+Dans cette partie, l'utilisateur a la possibilité de consulter les prêts.
+<h4> 5. Rechercher un livre </h4>
+Dans cette partie, l'utilisateur a la possibilité de rechercher un livre.
+<h4> 6. Recevoir des alertes </h4>
+Dans cette partie, l'utilisateur a la possibilité de configurer ses propres alertes ( notification ou mail)
 
 
 
