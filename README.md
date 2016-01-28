@@ -23,7 +23,7 @@ L'utilisateur devra se connecter pour accéder aux fonctionnalités suivantes :
 - Recevoir les alertes : l'utilisateur pourra configurer des notifications afin de recevoir une alerte qui lui signalera lorsqu'un prêt arrive à son terme (date et heure choisies par la personne).</br>
 
 - Rechercher un livre : une barre de recherche sera à disposition de l'utilisateur qui pourra donc trouver un document, en spécifiant certains critères (des filtres seront proposés).
-- Consulter les informations pratiques : une page permettra à l'utilisateur de voir toutes les informations de la bibliothèque (adresse, horaires d'ouverture et cetera).</br>
+- Consulter les informations pratiques : une page permettra à l'utilisateur de voir toutes les informations de la bibliothèque (adresse et horaires d'ouverture).</br>
 
 - Envoyer un message : un formulaire sera mis à disposition de l'utilisateur pour que ce dernier puisse contacter le personnel de la bibliothèque.
 
@@ -41,7 +41,7 @@ Après la connexion, nous arrivons sur la page principale de l'application. Elle
 <h4> 1. Envoyer un message </h4>
 Dans cette partie, l'utilisateur a la possibilité de contacter un responsable.
 <h4> 2. Consulter les informations pratiques </h4>
-Dans cette partie, plusieurs informations pratiques sont divulguées: l'adresse, le numéro de téléphone,les horaires, les contacts.
+Dans cette partie, plusieurs informations pratiques sont divulguées: l'adresse et les horaires.
 <h4> 3. Prolonger les documents </h4>
 Dans cette partie, l'utilisateur a la possibilité de prolonger les documents empruntés. 
 <h4> 4. Consulter les prêts </h4>

@@ -68,19 +68,24 @@ public class MainActivity extends AppCompatActivity {
 
                 switch(position) {
                     case 0:
-                        setContentView(R.layout.activity_rechercher_livre);
+                        Intent intentRechercherLivre = new Intent(getApplicationContext(), RechercherLivreActivity.class);
+                        startActivity(intentRechercherLivre);
                         break;
                     case 1:
-                        setContentView(R.layout.activity_consulter_prets);
+                        Intent intentConsulterPrets = new Intent(getApplicationContext(), ConsulterPretsActivity.class);
+                        startActivity(intentConsulterPrets);
                         break;
                     case 2:
-                        setContentView(R.layout.activity_recevoir_alerte);
+                        Intent intentRecevoirAlerte = new Intent(getApplicationContext(), RecevoirAlerteActivity.class);
+                        startActivity(intentRecevoirAlerte);
                         break;
                     case 3:
-                        setContentView(R.layout.activity_infos);
+                        Intent intentInfos = new Intent(getApplicationContext(), InfosActivity.class);
+                        startActivity(intentInfos);
                         break;
                     case 4:
-                        setContentView(R.layout.activity_contact);
+                        Intent intentContact = new Intent(getApplicationContext(), ContactActivity.class);
+                        startActivity(intentContact);
                         break;
                 }
 
