@@ -1,27 +1,27 @@
 # Ma BU en ligne #
 </br>
-## Modélisation des données : ##
+## ModÃ©lisation des donnÃ©es : ##
 <br>
 
-Diagramme de sequence: </br></br>
+Diagramme de sequence : </br></br>
 - Connection : L'utilisateur entre un id (numero d'etudiant) et un mots de passe. En cas d'echec il devra recommencer</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/inmt.png)
-- Consulter les prêts : l'utilisateur peut visualiser la date de retour des livres empruntés et accéder à l'historique complet des prêts déjà effectués auprès de la bibliothèque. De plus, il pourra voir s'il possède une date de blocage.</br>
+- Consulter les prÃªts : l'utilisateur peut visualiser la date de retour des livres empruntÃ©s et accÃ©der Ã  l'historique complet des prÃªts dÃ©jÃ  effectuÃ©s auprÃ¨s de la bibliothÃ¨que. De plus, il pourra voir s'il possÃ¨de une date de blocage.</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/77b9.png)
-- Prolonger un document : l'utilisateur se verra offrir la possibilité de prolonger un document qu'il a emprunté.</br>
+- Prolonger un document : l'utilisateur se verra offrir la possibilitÃ© de prolonger un document qu'il a empruntÃ©.</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/rfix.png) 
-- Recevoir les alertes : l'utilisateur pourra configurer des notifications afin de recevoir une alerte qui lui signalera lorsqu'un prêt arrive à son terme (date et heure choisies par la personne).</br>
+- Recevoir les alertes : l'utilisateur pourra configurer des notifications afin de recevoir une alerte qui lui signalera lorsqu'un prÃªt arrive Ã  son terme (date et heure choisies par la personne).</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/1ntp.png)
-- Rechercher un livre : une barre de recherche sera à disposition de l'utilisateur qui pourra donc trouver un document, en spécifiant certains critères (des filtres seront proposés).</br>
+- Rechercher un livre : une barre de recherche sera Ã  disposition de l'utilisateur qui pourra donc trouver un document, en spÃ©cifiant certains critÃ¨res (des filtres seront proposÃ©s).</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/e7la.png)
-- Consulter les informations pratiques : une page permettra à l'utilisateur de voir toutes les informations de la bibliothèque (adresse, horaires d'ouverture et cetera).</br>
+- Consulter les informations pratiques : une page permettra Ã  l'utilisateur de voir toutes les informations de la bibliothÃ¨que (adresse, horaires d'ouverture et cetera).</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/xzus.png)
-- Envoyer un message : un formulaire sera mis à disposition de l'utilisateur pour que ce dernier puisse contacter le personnel de la bibliothèque.</br>
+- Envoyer un message : un formulaire sera mis Ã  disposition de l'utilisateur pour que ce dernier puisse contacter le personnel de la bibliothÃ¨que.</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/m9k7.png)
