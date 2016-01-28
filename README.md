@@ -49,7 +49,7 @@ Dans cette partie, l'utilisateur a la possibilité de consulter les prêts.
 <h4> 5. Rechercher un livre </h4>
 Dans cette partie, l'utilisateur a la possibilité de rechercher un livre.
 <h4> 6. Recevoir des alertes </h4>
-Dans cette partie, l'utilisateur a la possibilité de configurer ses propres alertes ( notification ou mail)
+Dans cette partie, l'utilisateur a la possibilité de configurer ses propres alertes ( notification ou mail).
 
 
 
