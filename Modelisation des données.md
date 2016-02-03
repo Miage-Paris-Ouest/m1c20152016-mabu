@@ -1,4 +1,4 @@
-# Ma BU en ligne #
+﻿# Ma BU en ligne #
 </br>
 ## Modélisation des données : ##
 <br>
@@ -6,7 +6,7 @@
 Diagramme de sequence : </br></br>
 - Connection : L'utilisateur entre un id (numero d'etudiant) et un mots de passe. En cas d'echec il devra recommencer</br>
 </br>
-![](http://www.zupimages.net/up/16/04/inmt.png)
+![](http://www.zupimages.net/up/16/05/1e5r.png)
 - Consulter les prêts : l'utilisateur peut visualiser la date de retour des livres empruntés et accéder à l'historique complet des prêts déjà effectués auprès de la bibliothèque. De plus, il pourra voir s'il possède une date de blocage.</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/77b9.png)
@@ -21,7 +21,7 @@ Diagramme de sequence : </br></br>
 ![](http://www.zupimages.net/up/16/04/e7la.png)
 - Consulter les informations pratiques : une page permettra à l'utilisateur de voir toutes les informations de la bibliothèque (adresse, horaires d'ouverture et cetera).</br>
 </br>
-![](http://www.zupimages.net/up/16/04/xzus.png)
+![](http://www.zupimages.net/up/16/05/uscq.png)
 - Envoyer un message : un formulaire sera mis à disposition de l'utilisateur pour que ce dernier puisse contacter le personnel de la bibliothèque.</br>
 </br>
 ![](http://www.zupimages.net/up/16/04/m9k7.png)
