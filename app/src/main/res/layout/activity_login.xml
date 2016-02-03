@@ -60,5 +60,12 @@
         android:text="Se connecter"
         android:id="@+id/buttonLogin" />
 
+    <ImageView
+        android:layout_width="227dp"
+        android:layout_height="148dp"
+        android:id="@+id/imageViewLogo"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal" />
+
 
 </LinearLayout>
