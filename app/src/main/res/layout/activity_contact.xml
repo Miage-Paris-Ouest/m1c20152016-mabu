@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="e-mail"
-        android:id="@+id/textViewMail"
+        android:text="E-mail"
+        android:id="@+id/textViewTitreMail"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -24,10 +24,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="téléphone"
-        android:id="@+id/textViewPhone"
+        android:text="Téléphone"
+        android:id="@+id/textViewTitreTelephone"
         android:layout_marginTop="58dp"
-        android:layout_below="@+id/textViewMail"
+        android:layout_below="@+id/textViewTitreMail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -43,9 +43,17 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button2"
-        android:layout_alignParentBottom="true"
+        android:text="Envoyer"
+        android:id="@+id/ButtonEnvoiContact"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/editTextMessage"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEmail"
+        android:layout_below="@+id/textViewTitreMail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -54,18 +62,8 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText"
-        android:layout_below="@+id/textViewMail"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/textViewPhone"
+        android:id="@+id/editTextTelephone"
+        android:layout_below="@+id/textViewTitreTelephone"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -76,7 +74,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Message"
-        android:id="@+id/textViewTitreLogin"
+        android:id="@+id/textViewTitreMessage"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -84,12 +82,11 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/textViewTitreLogin"
+        android:id="@+id/editTextMessage"
+        android:layout_below="@+id/textViewTitreMessage"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/button2" />
+        android:layout_alignRight="@+id/editTextTelephone"
+        android:layout_alignEnd="@+id/editTextTelephone" />
 
 </RelativeLayout>
