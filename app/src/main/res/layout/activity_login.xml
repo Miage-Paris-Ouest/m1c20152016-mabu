@@ -64,7 +64,7 @@
         android:layout_width="227dp"
         android:layout_height="148dp"
         android:id="@+id/imageViewLogo"
-        android:src="@drawable/logo"
+        android:src="@drawable/logotransp"
         android:layout_gravity="center_horizontal" />
 
 
