@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ma BU</string>
+<<<<<<< HEAD
+=======
+
+    <!--<string name="title_activity_main2">Main2Activity</string>
+    <string name="caracteristique_prompt">Choisir un auteur</string>-->
+>>>>>>> faaa244205a28560b5c3cefb14252ed50757e9ba
 
     <string-array name="caracteristiques_array">
         <item>Titre</item>
@@ -8,9 +14,16 @@
         <item>Genre</item>
         <item>Edition</item>
     </string-array>
+<<<<<<< HEAD
 
+=======
+>>>>>>> faaa244205a28560b5c3cefb14252ed50757e9ba
     <string name="title_activity_main2">Main2Activity</string>
     <string name="ajouter_notification">Ajouter une notification</string>
     <string name="titre_notification">Alerte - Retour emprunt</string>
     <string name="desc_notification">Vous devez rendre votre livre dans X jours</string>
+<<<<<<< HEAD
+=======
+
+>>>>>>> faaa244205a28560b5c3cefb14252ed50757e9ba
 </resources>

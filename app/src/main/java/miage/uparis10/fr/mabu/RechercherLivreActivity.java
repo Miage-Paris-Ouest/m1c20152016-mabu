@@ -15,9 +15,10 @@ import android.widget.Toast;
 
 public class RechercherLivreActivity extends AppCompatActivity {
 
-    private Spinner spinner_caracteristiques;
-    private Button btnSubmit;
+    Spinner spinner_caracteristiques;
+    Button btnSubmit;
     EditText etCaracteristique;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

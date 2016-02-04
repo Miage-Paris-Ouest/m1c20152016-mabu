@@ -20,13 +20,11 @@
         android:layout_centerHorizontal="true" />
 
     <Spinner
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/spinnerCaracteristiques"
-        android:entries="@array/caracteristiques_arrays"
-        android:spinnerMode="dropdown"
-        android:layout_below="@+id/textViewTitreRechercherLivre"
-        android:layout_marginTop="83dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:entries="@array/caracteristiques_array" />
 
     <Button
         android:id="@+id/btnSubmit"
@@ -44,8 +42,8 @@
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/spinnerCaracteristiques"
-        android:layout_alignEnd="@+id/spinnerCaracteristiques" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>
