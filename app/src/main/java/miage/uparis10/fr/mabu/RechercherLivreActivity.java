@@ -25,7 +25,7 @@ public class RechercherLivreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rechercher_livre);
 
         Resources res = getResources();
-        String[] caracteristiques = res.getStringArray(R.array.caracteristiques_arrays);
+        String[] caracteristiques = res.getStringArray(R.array.caracteristiques_array);
 
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
 
