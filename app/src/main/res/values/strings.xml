@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Ma BU</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <!--<string name="title_activity_main2">Main2Activity</string>
+    <string name="caracteristique_prompt">Choisir un auteur</string>-->
+
+
+    <string-array name="caracteristiques_arrays">
+        <item>Titre</item>
+        <item>Auteur</item>
+        <item>Genre</item>
+        <item>Edition</item>
+    </string-array>
+
 </resources>

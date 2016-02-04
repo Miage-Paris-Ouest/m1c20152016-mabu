@@ -18,4 +18,34 @@
         android:id="@+id/textViewTitreRechercherLivre"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerCaracteristiques"
+        android:entries="@array/caracteristiques_arrays"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/textViewTitreRechercherLivre"
+        android:layout_marginTop="83dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etCaracteristique"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/spinnerCaracteristiques"
+        android:layout_alignEnd="@+id/spinnerCaracteristiques" />
+
+
 </RelativeLayout>

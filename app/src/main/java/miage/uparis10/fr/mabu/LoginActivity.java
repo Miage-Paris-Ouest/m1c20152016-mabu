@@ -25,15 +25,15 @@ public class LoginActivity extends AppCompatActivity{
             public void onClick(View v){
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 etLogin = (EditText) findViewById(R.id.etLogin);
-                etPassword = (EditText) findViewById(R.id.etPassword);
+                //etPassword = (EditText) findViewById(R.id.etPassword);
                 //etTest = (EditText) findViewById(R.id.etTest);
 
                 String login = etLogin.getText().toString();
-                String password = etPassword.getText().toString();
+                //String password = etPassword.getText().toString();
                 //String test = etTest.getText().toString();
 
                 intent.putExtra("login",login);
-                intent.putExtra("password",password);
+                //intent.putExtra("password",password);
                 //intent.putExtra("test",Integer.parseInt(test));
 
                 startActivity(intent);

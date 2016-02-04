@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String login = intent.getStringExtra("login");
-        String password = intent.getStringExtra("password");
+        //String password = intent.getStringExtra("password");
 
         //int test= intent.getIntExtra("test",10);
 

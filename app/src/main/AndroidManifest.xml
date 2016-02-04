@@ -22,6 +22,7 @@
         <activity android:name=".ConsulterPretsActivity" />
         <activity android:name=".RechercherLivreActivity" />
         <activity android:name=".RecevoirAlerteActivity" />
+        <activity android:name=".AfficherLivreActivity" />
     </application>
 
 </manifest>
