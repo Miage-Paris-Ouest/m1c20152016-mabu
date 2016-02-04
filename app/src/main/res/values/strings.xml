@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Ma BU</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="ajouter_notification">Ajouter une notification</string>
+    <string name="titre_notification">Alerte - Retour emprunt</string>
+    <string name="desc_notification">Vous devez rendre votre livre dans X jours</string>
 </resources>

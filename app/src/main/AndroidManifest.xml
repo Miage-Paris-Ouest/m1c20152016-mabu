@@ -23,5 +23,5 @@
         <activity android:name=".RechercherLivreActivity" />
         <activity android:name=".RecevoirAlerteActivity" />
     </application>
-
+    <uses-permission android:name="android.permission.VIBRATE" />
 </manifest>
