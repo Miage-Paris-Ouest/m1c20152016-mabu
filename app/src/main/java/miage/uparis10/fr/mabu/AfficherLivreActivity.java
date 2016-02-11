@@ -15,8 +15,9 @@ public class AfficherLivreActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String caracteristique = intent.getStringExtra("caracteristique");
 
+        String valeur = intent.getStringExtra("valeur");
 
         TextView textViewLogin = (TextView) findViewById(R.id.textViewCaracteristique);
-        textViewLogin.setText("Caracteristique " + caracteristique);
+        textViewLogin.setText(valeur + " : " + caracteristique);
     }
 }

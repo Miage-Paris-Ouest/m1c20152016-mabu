@@ -18,6 +18,7 @@ public class RechercherLivreActivity extends AppCompatActivity {
     Spinner spinner_caracteristiques;
     Button btnSubmit;
     EditText etCaracteristique;
+    String valeur;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,8 +36,20 @@ public class RechercherLivreActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), AfficherLivreActivity.class);
                 etCaracteristique = (EditText) findViewById(R.id.etCaracteristique);
 
+                spinner_caracteristiques= (Spinner) findViewById(R.id.spinnerCaracteristiques);
+
+                if (spinner_caracteristiques.getSelectedItem().toString().equals("Titre"))
+                    valeur = "titre";
+                else if (spinner_caracteristiques.getSelectedItem().toString().equals("Auteur"))
+                    valeur = "auteur";
+                else if (spinner_caracteristiques.getSelectedItem().toString().equals("Genre"))
+                    valeur = "genre";
+                else if (spinner_caracteristiques.getSelectedItem().toString().equals("Edition"))
+                    valeur = "edition";
+
                 String caracteristique = etCaracteristique.getText().toString();
                 intent.putExtra("caracteristique", caracteristique);
+                intent.putExtra("valeur", valeur);
 
                 startActivity(intent);
             }

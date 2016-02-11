@@ -2,16 +2,13 @@
 <resources>
     <string name="app_name">Ma BU</string>
 
-    <!--<string name="title_activity_main2">Main2Activity</string>
-    <string name="caracteristique_prompt">Choisir un auteur</string>-->
-
-
     <string-array name="caracteristiques_array">
         <item>Titre</item>
         <item>Auteur</item>
         <item>Genre</item>
         <item>Edition</item>
     </string-array>
+
     <string name="title_activity_main2">Main2Activity</string>
     <string name="ajouter_notification">Ajouter une notification</string>
     <string name="titre_notification">Alerte - Retour emprunt</string>
