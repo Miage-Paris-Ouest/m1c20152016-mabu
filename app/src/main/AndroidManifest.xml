@@ -22,7 +22,11 @@
         <activity android:name=".ConsulterPretsActivity" />
         <activity android:name=".RechercherLivreActivity" />
         <activity android:name=".RecevoirAlerteActivity" />
+        <receiver android:name=".TimeAlertes" android:process=":remote"/>
         <activity android:name=".AfficherLivreActivity" />
     </application>
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
 </manifest>

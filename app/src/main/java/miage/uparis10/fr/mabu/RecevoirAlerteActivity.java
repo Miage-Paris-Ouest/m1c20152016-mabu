@@ -1,19 +1,24 @@
 package miage.uparis10.fr.mabu;
 
 
+import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+
+
+import java.util.Calendar;
 
 public class RecevoirAlerteActivity extends AppCompatActivity {
 
     private Button ajouterNotification;
+    AlarmManager alarmManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -21,36 +26,18 @@ public class RecevoirAlerteActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recevoir_alerte);
 
         ajouterNotification = (Button) findViewById(R.id.ajouter_notification);
+        alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         ajouterNotification.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View arg0) {
-                createNotification();
+                ajouterAlarme();
             }
         });
     }
 
-    private final void createNotification(){
-        final NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-
-        final Intent launchNotifiactionIntent = new Intent(this,RecevoirAlerteActivity.class);
-        final PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, launchNotifiactionIntent, PendingIntent.FLAG_ONE_SHOT);
-
-        final String titreNotification = getResources().getString(R.string.titre_notification);
-        final String descNotification = getResources().getString(R.string.desc_notification);
-
-        final Notification notification = new Notification(R.drawable.notification, titreNotification, System.currentTimeMillis());
-        notification.defaults |= Notification.DEFAULT_VIBRATE;
-
-        Notification.Builder builder = new Notification.Builder(this)
-                .setWhen(System.currentTimeMillis())
-                .setTicker(titreNotification)
-                .setSmallIcon(R.drawable.notification)
-                .setContentTitle(titreNotification)
-                .setContentText(descNotification)
-                .setContentIntent(pendingIntent);
-        builder.setVibrate(new long[] { 0,200,100,200,100,200 });
-
-        notificationManager.notify(01, builder.build());
+    public void ajouterAlarme() {
+        Intent intent = new Intent(RecevoirAlerteActivity.this, TimeAlertes.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this.getApplicationContext(), 1, intent, PendingIntent.FLAG_ONE_SHOT);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(1000*60), pendingIntent);
     }
 }
