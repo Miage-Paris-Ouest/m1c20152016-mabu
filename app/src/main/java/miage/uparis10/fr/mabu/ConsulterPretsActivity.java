@@ -1,7 +1,11 @@
 package miage.uparis10.fr.mabu;
 
 
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 
 
@@ -39,36 +43,83 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         //On déclare la HashMap qui contiendra les informations pour un item
         HashMap<String, String> map;
 
-        //Création d'une HashMap pour insérer les informations du premier item de notre listView
-        map = new HashMap<String, String>();
-        //on insère un élément titre que l'on récupérera dans le textView titre créé dans le fichier affichageitem.xml
-        map.put("titre", "Comment devenir Dieu en 666 étapes");
-        //on insère un élément description que l'on récupérera dans le textView description créé dans le fichier affichageitem.xml
-        map.put("description", "Il faut le lire pour le savoir :p");
-        //on insère la référence à l'image (convertit en String car normalement c'est un int) que l'on récupérera dans l'imageView créé dans le fichier affichageitem.xml
-        map.put("img", String.valueOf(R.drawable.icone_book));
-        //enfin on ajoute cette hashMap dans la arrayList
-        listItem.add(map);
-
         //On refait la manip plusieurs fois avec des données différentes pour former les items de notre ListView
 
-        map = new HashMap<String, String>();
-        map.put("titre", "RTFM");
-        map.put("description", "Lit le putain de manuel !!");
-        map.put("img", String.valueOf(R.drawable.icone_book));
-        listItem.add(map);
+        ArrayList<String> liste = new ArrayList<String>();
+        /*
+        // CHERCHER DANS LE FICHIER CSV LES ELEMENT
 
-        map = new HashMap<String, String>();
-        map.put("titre", "Savoir coder pour les Noob");
-        map.put("description", "Un livre pour les noob que les pro n'utilise pas ");
-        map.put("img", String.valueOf(R.drawable.icone_book));
-        listItem.add(map);
 
+        try{
+            InputStream inputStream = getResources().openRawResource(R.raw.bd);
+            InputStreamReader ipsr=new InputStreamReader(inputStream);
+            BufferedReader br=new BufferedReader(ipsr);
+            String ligne;
+
+
+            while ((ligne=br.readLine())!=null){
+                // ON DECOUPE LE TABLEAU A CHAQUE ;
+                String[] tableau=ligne.split(";");
+                for(String val : tableau)
+                {
+                    // ON AJOUTE A L'arrayListe
+                    liste.add(val);
+                }
+
+
+            }
+
+
+
+            br.close();
+        }
+        catch (Exception e){
+            System.out.println(e.toString());
+        }
+        // FIN CHERCHER DANS LE FICHIER CSV
+        */
+
+        // LISTIG DE TOUS LES EMPRUNT EN COUR
+        try{
+            InputStream inputStream = getResources().openRawResource(R.raw.bd);
+            InputStreamReader ipsr=new InputStreamReader(inputStream);
+            BufferedReader br=new BufferedReader(ipsr);
+            String ligne;
+
+
+
+            while ((ligne=br.readLine())!=null){
+                int i=0;
+                // ON DECOUPE LE TABLEAU A CHAQUE ";"
+                String[] tableau=ligne.split(";");
+                for(String val : tableau)
+                {
+                    liste.add(val);
+                    i++;
+                }
+
+                map = new HashMap<String, String>();
+                map.put("titre", "Titre : "+liste.get(0));
+                map.put("description","Resuer : "+liste.get(2));
+                map.put("img", String.valueOf(R.drawable.icone_book));
+                listItem.add(map);
+            }
+            br.close();
+        }
+        catch (Exception e){
+            System.out.println(e.toString());
+        }
+
+
+/*
         map = new HashMap<String, String>();
-        map.put("titre", "Pouic");
-        map.put("description", "le livre des poule");
+        map.put("titre", "Le titre");
+        map.put("description", "Le resume ");
         map.put("img", String.valueOf(R.drawable.icone_book));
-        listItem.add(map);
+        listItem.add(map);*/
+
+
+
 
         //Création d'un SimpleAdapter qui se chargera de mettre les items présent dans notre list (listItem) dans la vue affichageitem
         SimpleAdapter mSchedule = new SimpleAdapter (this.getBaseContext(), listItem, R.layout.item_liste_prets,
