@@ -20,7 +20,6 @@ import android.widget.SimpleAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class ConsulterPretsActivity extends AppCompatActivity {
-    int i=0;
     int j=0;
     ListView maListViewPerso;
     String[] prenoms = new String[]{
@@ -36,7 +35,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consulter_prets);
 
-//Récupération de la listview créée dans le fichier main.xml
+        //Récupération de la listview créée dans le fichier main.xml
         maListViewPerso = (ListView) findViewById(R.id.listView);
 
         //Création de la ArrayList qui nous permettra de remplire la listView
@@ -53,7 +52,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
 
 
         try{
-            InputStream inputStream = getResources().openRawResource(R.raw.bd);
+            InputStream inputStream = getResources().openRawResource(R.raw.prets);
             InputStreamReader ipsr=new InputStreamReader(inputStream);
             BufferedReader br=new BufferedReader(ipsr);
             String ligne;
@@ -83,7 +82,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
 
         // LISTING DE TOUS LES EMPRUNTS EN COURS
         try{
-            InputStream inputStream = getResources().openRawResource(R.raw.bd);
+            InputStream inputStream = getResources().openRawResource(R.raw.prets);
             InputStreamReader ipsr=new InputStreamReader(inputStream);
             BufferedReader br=new BufferedReader(ipsr);
             String ligne;
@@ -97,7 +96,6 @@ public class ConsulterPretsActivity extends AppCompatActivity {
                 for(String val : tableau)
                 {
                     liste.add(val);
-                    //i++;
                 }
 
                 map = new HashMap<String, String>();
