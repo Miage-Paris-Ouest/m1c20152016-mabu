@@ -21,6 +21,7 @@ public class RecevoirAlerteActivity extends AppCompatActivity {
     private Button notification1h;
     private Button notification1j;
     private Button notification7j;
+    private Button notification5m_avant;
     AlarmManager alarmManager;
 
     @Override
@@ -32,6 +33,9 @@ public class RecevoirAlerteActivity extends AppCompatActivity {
         notification1h = (Button) findViewById(R.id.notification1h);
         notification1j = (Button) findViewById(R.id.notification1j);
         notification7j = (Button) findViewById(R.id.notification7j);
+        notification5m_avant = (Button) findViewById(R.id.notification5m_avant);
+
+
         alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         notification5m.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +59,17 @@ public class RecevoirAlerteActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 ajouterAlarme(60,24,7);
+            }
+        });
+
+        notification5m_avant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Calendar calendar = Calendar.getInstance();
+                int dateCourante = calendar.get(Calendar.DAY_OF_MONTH);
+                int dateRendu = 18;
+                int dateRestant = dateRendu - dateCourante;
+                ajouterAlarme(5,1,dateRestant);
             }
         });
     }

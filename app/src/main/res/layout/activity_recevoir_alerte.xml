@@ -50,4 +50,12 @@
         android:layout_below="@+id/notification1h"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification5m_avant"
+        android:id="@+id/notification5m_avant"
+        android:layout_below="@+id/notification7j"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

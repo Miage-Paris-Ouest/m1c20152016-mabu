@@ -14,6 +14,7 @@
     <string name="notification1h">Alerte dans 1 heure</string>
     <string name="notification1j">Alerte dans 1 jour</string>
     <string name="notification7j">Alerte dans 7 jours</string>
+    <string name="notification5m_avant">Alerte 5 mins avant</string>
 
 
 
