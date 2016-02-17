@@ -41,42 +41,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         //On refait la manip plusieurs fois avec des données différentes pour former les items de notre ListView
 
         ArrayList<String> liste = new ArrayList<String>();
-<<<<<<< HEAD
-        /*
-        // CHERCHER DANS LE FICHIER CSV LES ELEMENT
 
-
-        try{
-            InputStream inputStream = getResources().openRawResource(R.raw.prets);
-            InputStreamReader ipsr=new InputStreamReader(inputStream);
-            BufferedReader br=new BufferedReader(ipsr);
-            String ligne;
-
-
-            while ((ligne=br.readLine())!=null){
-                // ON DECOUPE LE TABLEAU A CHAQUE ;
-                String[] tableau=ligne.split(";");
-                for(String val : tableau)
-                {
-                    // ON AJOUTE A L'arrayListe
-                    liste.add(val);
-                }
-
-
-            }
-
-
-
-            br.close();
-        }
-        catch (Exception e){
-            System.out.println(e.toString());
-        }
-        // FIN CHERCHER DANS LE FICHIER CSV
-        */
-
-=======
->>>>>>> bd07a180c5125ba6a0adf790e2e7582b21cb660f
         // LISTING DE TOUS LES EMPRUNTS EN COURS
         try{
             InputStream inputStream = getResources().openRawResource(R.raw.prets);
@@ -108,8 +73,6 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         catch (Exception e){
             System.out.println(e.toString());
         }
-
-
 
 
         //Création d'un SimpleAdapter qui se chargera de mettre les items présent dans notre list (listItem) dans la vue affichageitem
