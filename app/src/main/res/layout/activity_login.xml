@@ -70,8 +70,14 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Se connecter"
-        android:id="@+id/buttonLogin" />
+        android:text="Se connecter(csv)"
+        android:id="@+id/buttonLogincsv" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter(api)"
+        android:id="@+id/buttonLoginapi" />
 
     <ImageView
         android:layout_width="227dp"

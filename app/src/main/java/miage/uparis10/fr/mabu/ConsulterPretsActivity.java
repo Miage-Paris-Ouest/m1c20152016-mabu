@@ -22,13 +22,7 @@ import android.widget.AdapterView.OnItemClickListener;
 public class ConsulterPretsActivity extends AppCompatActivity {
     int j=0;
     ListView maListViewPerso;
-    String[] prenoms = new String[]{
-            "Antoine", "Benoit", "Cyril", "David", "Eloise", "Florent",
-            "Gerard", "Hugo", "Ingrid", "Jonathan", "Kevin", "Logan",
-            "Mathieu", "Noemie", "Olivia", "Philippe", "Quentin", "Romain",
-            "Sophie", "Tristan", "Ulric", "Vincent", "Willy", "Xavier",
-            "Yann", "Zoé"
-    };
+
     @Override
     //http://tutos-android-france.com/listview-afficher-une-liste-delements/
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +41,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         //On refait la manip plusieurs fois avec des données différentes pour former les items de notre ListView
 
         ArrayList<String> liste = new ArrayList<String>();
+<<<<<<< HEAD
         /*
         // CHERCHER DANS LE FICHIER CSV LES ELEMENT
 
@@ -80,6 +75,8 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         // FIN CHERCHER DANS LE FICHIER CSV
         */
 
+=======
+>>>>>>> bd07a180c5125ba6a0adf790e2e7582b21cb660f
         // LISTING DE TOUS LES EMPRUNTS EN COURS
         try{
             InputStream inputStream = getResources().openRawResource(R.raw.prets);
@@ -111,14 +108,6 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         catch (Exception e){
             System.out.println(e.toString());
         }
-
-
-/*
-        map = new HashMap<String, String>();
-        map.put("titre", "Le titre");
-        map.put("description", "Le resume ");
-        map.put("img", String.valueOf(R.drawable.icone_book));
-        listItem.add(map);*/
 
 
 

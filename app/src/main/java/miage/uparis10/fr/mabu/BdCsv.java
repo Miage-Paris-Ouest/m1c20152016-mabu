@@ -21,18 +21,29 @@ public class BdCsv extends AppCompatActivity {
 
     public ArrayList<String> lirBd(){
         try{
+<<<<<<< HEAD
 
             InputStream inputStream = getResources().openRawResource(R.raw.prets);
+=======
+            InputStream inputStream = getResources().openRawResource(R.raw.bd);
+>>>>>>> bd07a180c5125ba6a0adf790e2e7582b21cb660f
             InputStreamReader ipsr=new InputStreamReader(inputStream);
             BufferedReader br=new BufferedReader(ipsr);
             String ligne;
-            String[] tableau;
+
+
 
             while ((ligne=br.readLine())!=null){
-                tableau = ligne.split(";");
-                liste.add(Arrays.toString(tableau));
-            }
 
+                // ON DECOUPE LE TABLEAU A CHAQUE ";"
+                String[] tableau=ligne.split(";");
+                for(String val : tableau)
+                {
+                    liste.add(val);
+                    //i++;
+                }
+
+            }
             br.close();
         }
         catch (Exception e){
