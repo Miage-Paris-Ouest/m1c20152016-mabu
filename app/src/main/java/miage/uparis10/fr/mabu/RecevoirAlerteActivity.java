@@ -17,7 +17,10 @@ import java.util.Calendar;
 
 public class RecevoirAlerteActivity extends AppCompatActivity {
 
-    private Button ajouterNotification;
+    private Button notification5m;
+    private Button notification1h;
+    private Button notification1j;
+    private Button notification7j;
     AlarmManager alarmManager;
 
     @Override
@@ -25,19 +28,42 @@ public class RecevoirAlerteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recevoir_alerte);
 
-        ajouterNotification = (Button) findViewById(R.id.ajouter_notification);
+        notification5m = (Button) findViewById(R.id.notification5m);
+        notification1h = (Button) findViewById(R.id.notification1h);
+        notification1j = (Button) findViewById(R.id.notification1j);
+        notification7j = (Button) findViewById(R.id.notification7j);
         alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        ajouterNotification.setOnClickListener(new View.OnClickListener() {
+        notification5m.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                ajouterAlarme();
+                ajouterAlarme(5,1,1);
+            }
+        });
+        notification1h.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                ajouterAlarme(60,1,1);
+            }
+        });
+        notification1j.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                ajouterAlarme(60,24,1);
+            }
+        });
+        notification7j.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                ajouterAlarme(60,24,7);
             }
         });
     }
 
-    public void ajouterAlarme() {
+    public void ajouterAlarme(int minutes, int heures, int jours) {
+        /*Calendar calendar = Calendar.getInstance();
+        calendar.set(2016,02,11,12,43);*/
         Intent intent = new Intent(RecevoirAlerteActivity.this, TimeAlertes.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this.getApplicationContext(), 1, intent, PendingIntent.FLAG_ONE_SHOT);
-        alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(1000*60), pendingIntent);
+        alarmManager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+(1000*60*minutes*heures*jours), pendingIntent);
     }
 }

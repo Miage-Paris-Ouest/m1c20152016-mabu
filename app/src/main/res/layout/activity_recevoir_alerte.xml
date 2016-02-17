@@ -22,8 +22,32 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ajouter_notification"
-        android:id="@+id/ajouter_notification"
+        android:text="@string/notification5m"
+        android:id="@+id/notification5m"
         />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification1h"
+        android:id="@+id/notification1h"
+        android:layout_below="@+id/notification5m"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification7j"
+        android:id="@+id/notification7j"
+        android:layout_below="@+id/notification1j"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/notification1j"
+        android:id="@+id/notification1j"
+        android:layout_below="@+id/notification1h"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

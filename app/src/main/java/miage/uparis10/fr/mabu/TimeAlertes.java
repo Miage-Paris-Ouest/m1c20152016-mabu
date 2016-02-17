@@ -18,7 +18,7 @@ public class TimeAlertes extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent){
 
         CharSequence titreNotification = "Alerte - Retour emprunt";
-        CharSequence descNotification = "Vous devez rendre votre document dans X jours";
+        CharSequence descNotification = "Vous devez bientôt rendre votre document";
 
         notificationManager=(NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
 
