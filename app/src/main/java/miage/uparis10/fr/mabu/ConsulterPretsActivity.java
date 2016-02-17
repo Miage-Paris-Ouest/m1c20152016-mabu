@@ -20,6 +20,8 @@ import android.widget.SimpleAdapter;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class ConsulterPretsActivity extends AppCompatActivity {
+    int i=0;
+    int j=0;
     ListView maListViewPerso;
     String[] prenoms = new String[]{
             "Antoine", "Benoit", "Cyril", "David", "Eloise", "Florent",
@@ -79,7 +81,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         // FIN CHERCHER DANS LE FICHIER CSV
         */
 
-        // LISTIG DE TOUS LES EMPRUNT EN COUR
+        // LISTING DE TOUS LES EMPRUNTS EN COURS
         try{
             InputStream inputStream = getResources().openRawResource(R.raw.bd);
             InputStreamReader ipsr=new InputStreamReader(inputStream);
@@ -89,18 +91,20 @@ public class ConsulterPretsActivity extends AppCompatActivity {
 
 
             while ((ligne=br.readLine())!=null){
-                int i=0;
+
                 // ON DECOUPE LE TABLEAU A CHAQUE ";"
                 String[] tableau=ligne.split(";");
                 for(String val : tableau)
                 {
                     liste.add(val);
-                    i++;
+                    //i++;
                 }
 
                 map = new HashMap<String, String>();
-                map.put("titre", "Titre : "+liste.get(0));
-                map.put("description","Resuer : "+liste.get(2));
+                map.put("titre", "Titre : "+liste.get(j));
+                j++;
+                map.put("description","Resumé : "+liste.get(j));
+                j++;
                 map.put("img", String.valueOf(R.drawable.icone_book));
                 listItem.add(map);
             }
