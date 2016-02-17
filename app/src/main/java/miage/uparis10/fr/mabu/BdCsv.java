@@ -22,7 +22,7 @@ public class BdCsv extends AppCompatActivity {
     public ArrayList<String> lirBd(){
         try{
 
-            InputStream inputStream = getResources().openRawResource(R.raw.bd);
+            InputStream inputStream = getResources().openRawResource(R.raw.prets);
             InputStreamReader ipsr=new InputStreamReader(inputStream);
             BufferedReader br=new BufferedReader(ipsr);
             String ligne;
