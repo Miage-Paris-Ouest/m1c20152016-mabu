@@ -23,13 +23,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
     int i=0;
     int j=0;
     ListView maListViewPerso;
-    String[] prenoms = new String[]{
-            "Antoine", "Benoit", "Cyril", "David", "Eloise", "Florent",
-            "Gerard", "Hugo", "Ingrid", "Jonathan", "Kevin", "Logan",
-            "Mathieu", "Noemie", "Olivia", "Philippe", "Quentin", "Romain",
-            "Sophie", "Tristan", "Ulric", "Vincent", "Willy", "Xavier",
-            "Yann", "Zoé"
-    };
+
     @Override
     //http://tutos-android-france.com/listview-afficher-une-liste-delements/
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,39 +42,6 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         //On refait la manip plusieurs fois avec des données différentes pour former les items de notre ListView
 
         ArrayList<String> liste = new ArrayList<String>();
-        /*
-        // CHERCHER DANS LE FICHIER CSV LES ELEMENT
-
-
-        try{
-            InputStream inputStream = getResources().openRawResource(R.raw.bd);
-            InputStreamReader ipsr=new InputStreamReader(inputStream);
-            BufferedReader br=new BufferedReader(ipsr);
-            String ligne;
-
-
-            while ((ligne=br.readLine())!=null){
-                // ON DECOUPE LE TABLEAU A CHAQUE ;
-                String[] tableau=ligne.split(";");
-                for(String val : tableau)
-                {
-                    // ON AJOUTE A L'arrayListe
-                    liste.add(val);
-                }
-
-
-            }
-
-
-
-            br.close();
-        }
-        catch (Exception e){
-            System.out.println(e.toString());
-        }
-        // FIN CHERCHER DANS LE FICHIER CSV
-        */
-
         // LISTING DE TOUS LES EMPRUNTS EN COURS
         try{
             InputStream inputStream = getResources().openRawResource(R.raw.bd);
@@ -113,14 +74,6 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         catch (Exception e){
             System.out.println(e.toString());
         }
-
-
-/*
-        map = new HashMap<String, String>();
-        map.put("titre", "Le titre");
-        map.put("description", "Le resume ");
-        map.put("img", String.valueOf(R.drawable.icone_book));
-        listItem.add(map);*/
 
 
 
