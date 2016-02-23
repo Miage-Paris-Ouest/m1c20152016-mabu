@@ -10,4 +10,8 @@ public class LoginActivityTest extends TestCase {
     public void testOnCreate() throws Exception {
 
     }
+
+    public void testCheckLogin() throws Exception {
+
+    }
 }
