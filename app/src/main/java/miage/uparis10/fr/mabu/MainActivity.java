@@ -11,6 +11,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+
 public class MainActivity extends AppCompatActivity {
     ListView listView;
     @Override
@@ -84,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(intentRecevoirAlerte);
                         break;
                     case 3:
+
                         Intent intentInfos = new Intent(getApplicationContext(), InfosActivity.class);
                         startActivity(intentInfos);
                         break;
@@ -98,4 +104,5 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 }
