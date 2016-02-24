@@ -50,8 +50,8 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         // LISTING DE TOUS LES EMPRUNTS EN COURS
         try{
             InputStream inputStream = getResources().openRawResource(R.raw.prets);
-            InputStreamReader ipsr=new InputStreamReader(inputStream);
-            BufferedReader br=new BufferedReader(ipsr);
+            InputStreamReader ipsr = new InputStreamReader(inputStream);
+            BufferedReader br = new BufferedReader(ipsr);
             String ligne;
 
 
@@ -91,7 +91,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
         maListViewPerso.setOnItemClickListener(new OnItemClickListener() {
             @Override
             @SuppressWarnings("unchecked")
-            public void onItemClick(AdapterView<?> a, View v, int position, long id) {
+            public void onItemClick(AdapterView<?> a, View v, final int position, long id) {
                 //on récupère la HashMap contenant les infos de notre item (titre, description, img)
                 final HashMap<String, String> map = (HashMap<String, String>) maListViewPerso.getItemAtPosition(position);
                 //on créer une boite de dialogue
@@ -105,6 +105,7 @@ public class ConsulterPretsActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         Intent intentProlonger = new Intent(getApplicationContext(), ProlongationActivity.class);
                         intentProlonger.putExtra("titre",map.get("titre"));
+                        intentProlonger.putExtra("indice",Integer.parseInt(String.valueOf(position)));
                         startActivity(intentProlonger);
                     }
                 });
@@ -113,6 +114,5 @@ public class ConsulterPretsActivity extends AppCompatActivity {
                     adb.show();
                 }
             });
-
     }
 }
