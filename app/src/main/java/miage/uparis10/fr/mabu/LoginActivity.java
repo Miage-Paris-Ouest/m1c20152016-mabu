@@ -45,10 +45,11 @@ public class LoginActivity extends AppCompatActivity{
                     listeLogins.add(val);
                 }
 
-                if (username==listeLogins.get(i)) {
-                    return true;
+                for(int j=0; j<listeLogins.size();j++){
+                    if (username.equals(listeLogins.get(j))) {
+                        return true;
+                    }
                 }
-                i++;
 
             }
 
