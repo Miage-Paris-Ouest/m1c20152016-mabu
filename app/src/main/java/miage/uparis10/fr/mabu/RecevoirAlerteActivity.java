@@ -64,13 +64,31 @@ public class RecevoirAlerteActivity extends AppCompatActivity {
             public void onClick(View arg0) {
                 choixJour = (EditText) findViewById(R.id.choixJour);
                 String recup = choixJour.getText().toString();
-                int jour =  parseInt(recup);
-                ajouterAlarme(1, 1, jour);
-                AlertDialog.Builder adb = new AlertDialog.Builder(RecevoirAlerteActivity.this);
-                adb.setTitle("Info");
-                adb.setMessage("Notification créée avec succès");
-                adb.setPositiveButton("Ok", null);
-                adb.show();
+                if(recup.length() == 0){
+                    AlertDialog.Builder adb = new AlertDialog.Builder(RecevoirAlerteActivity.this);
+                    adb.setTitle("Alerte");
+                    adb.setMessage("Veuillez rentrer un nombre de jours");
+                    adb.setPositiveButton("Ok", null);
+                    adb.show();
+                }
+                else {
+                    try {
+                        int jour = parseInt(recup);
+                        ajouterAlarme(1, 1, jour);
+                        AlertDialog.Builder adb = new AlertDialog.Builder(RecevoirAlerteActivity.this);
+                        adb.setTitle("Info");
+                        adb.setMessage("Notification créée avec succès");
+                        adb.setPositiveButton("Ok", null);
+                        adb.show();
+                    }
+                    catch(Exception e){
+                        AlertDialog.Builder adb = new AlertDialog.Builder(RecevoirAlerteActivity.this);
+                        adb.setTitle("Alerte");
+                        adb.setMessage("Veuillez rentrer un nombre de jours");
+                        adb.setPositiveButton("Ok", null);
+                        adb.show();
+                    }
+                }
             }
         });
     }
