@@ -27,12 +27,16 @@ public class BdCsv extends AppCompatActivity {
             BufferedReader br=new BufferedReader(ipsr);
             String ligne;
 
-
-
             while ((ligne=br.readLine())!=null){
 
                 // ON DECOUPE LE TABLEAU A CHAQUE ";"
                 String[] tableau=ligne.split(";");
+
+                for(int x=0;x< tableau.length;x++)
+                {
+                    System.out.println("TROUVER :"+tableau[x]);
+                }
+
                 for(String val : tableau)
                 {
                     liste.add(val);
@@ -46,6 +50,11 @@ public class BdCsv extends AppCompatActivity {
             System.out.println(e.toString());
         }
         return liste;
+    }
+
+    public int testLecture(){
+        return 2;
+
     }
 
 

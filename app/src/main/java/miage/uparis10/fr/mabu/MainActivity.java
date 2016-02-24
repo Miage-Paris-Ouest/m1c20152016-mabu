@@ -65,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
 
                 // ListView Clicked item value
                 String  itemValue = (String) listView.getItemAtPosition(position);
+                BdCsv csv = new BdCsv("prets");
+
+                int i=csv.testLecture();
+                System.out.print("BRAAA"+i);
 
                 switch(position) {
                     case 0:

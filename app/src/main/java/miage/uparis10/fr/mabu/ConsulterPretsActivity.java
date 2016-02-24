@@ -44,6 +44,9 @@ public class ConsulterPretsActivity extends AppCompatActivity {
 
         ArrayList<String> liste = new ArrayList<String>();
 
+
+
+
         // LISTING DE TOUS LES EMPRUNTS EN COURS
         try{
             InputStream inputStream = getResources().openRawResource(R.raw.prets);
