@@ -1,9 +1,7 @@
 ﻿# Ma BU en ligne #
 </br>
-## Modélisation des données : ##
-<br>
 
-Diagramme de sequence : </br></br>
+Diagrammes de séquence : </br></br>
 - Connection : L'utilisateur entre un id (numero d'etudiant) et un mots de passe. En cas d'echec il devra recommencer</br>
 </br>
 ![](http://www.zupimages.net/up/16/05/1e5r.png)

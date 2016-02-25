@@ -1,4 +1,5 @@
-# Ma BU en ligne #
+# Ma BU en ligne # [![Build Status](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabu.svg?branch=master)](https://travis-ci.org/Miage-Paris-Ouest/m1c20152016-mabu)
+
 </br>
 ## Objectif : ##
 </br>
@@ -27,29 +28,6 @@ L'utilisateur devra se connecter pour accéder aux fonctionnalités suivantes :
 
 - Envoyer un message : un formulaire sera mis à disposition de l'utilisateur pour que ce dernier puisse contacter le personnel de la bibliothèque.
 
-## Manuel d'utilisation : ##
-</br>
-
-Au lancement de l'application, nous arrivons sur la page de connexion.
-
-<h3> La connexion </h3> 
-Pour se connecter, il faut indiquer son identifiant (compte lecteur) et son mot de passe. Enfin, cliquer sur le bouton "Se connecter".
-
-<h3> Choisir son action </h3>
-Après la connexion, nous arrivons sur la page principale de l'application. Elle permet de choisir une action parmi plusieurs.
-
-<h4> 1. Envoyer un message </h4>
-Dans cette partie, l'utilisateur a la possibilité de contacter un responsable.
-<h4> 2. Consulter les informations pratiques </h4>
-Dans cette partie, plusieurs informations pratiques sont divulguées: l'adresse et les horaires.
-<h4> 3. Prolonger les documents </h4>
-Dans cette partie, l'utilisateur a la possibilité de prolonger les documents empruntés. 
-<h4> 4. Consulter les prêts </h4>
-Dans cette partie, l'utilisateur a la possibilité de consulter les prêts.
-<h4> 5. Rechercher un livre </h4>
-Dans cette partie, l'utilisateur a la possibilité de rechercher un livre.
-<h4> 6. Recevoir des alertes </h4>
-Dans cette partie, l'utilisateur a la possibilité de configurer ses propres alertes ( notification ou mail).
 
 
 
