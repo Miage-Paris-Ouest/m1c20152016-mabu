@@ -29,5 +29,15 @@ L'utilisateur devra se connecter pour accéder aux fonctionnalités suivantes :
 - Envoyer un message : un formulaire sera mis à disposition de l'utilisateur pour que ce dernier puisse contacter le personnel de la bibliothèque.
 
 
+## Documentation ##
+</br>
+Vous trouverez la documentation de notre projet dans le dossier docs se situant à la racine.
+Il contient :
+- Un dossier "Doc consignes" contenant les différentes demandes du client.
+- Les contraintes techniques
+- Les diagrammes de séquences
+- Le manuel d'utilisation
+- La modélisation des données
+
 
 
